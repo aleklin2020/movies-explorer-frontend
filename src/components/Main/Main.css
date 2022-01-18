@@ -1,0 +1,16 @@
+.main__box {
+	 padding: 110px 70px;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.main__title {
+	 line-height: 27px;
+  font-size: 22px;
+  font-weight: 400;
+  margin: 0 0 70px;
+  padding-bottom: 23px;
+  border-bottom: 1px #000 solid;
+}
