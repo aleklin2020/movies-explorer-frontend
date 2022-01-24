@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Link, NavLink } from 'react-router-dom';
 import set from '../../../images/strelka.svg';
 import './portfolio.css';
 

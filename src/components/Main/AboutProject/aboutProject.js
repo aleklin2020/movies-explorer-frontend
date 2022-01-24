@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Link, NavLink } from 'react-router-dom';
 import './aboutProject.css';
 
 function AboutProject() {

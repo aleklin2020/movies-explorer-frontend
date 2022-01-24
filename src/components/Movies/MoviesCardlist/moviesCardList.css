@@ -1,0 +1,20 @@
+.Movies-list {
+	margin: 70px 70px 0 70px;
+	display: grid;
+	grid-column-gap: 20px;
+
+}
+
+@media (max-width: 1279px) {
+    .Movies-list {
+  
+   margin: 70px 30px 0 30px;
+}
+}
+
+@media (max-width: 767px) {
+    .Movies-list {
+  
+  margin: 40px 10px;
+}
+}

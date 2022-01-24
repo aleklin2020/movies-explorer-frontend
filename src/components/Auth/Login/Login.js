@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, Link, NavLink } from 'react-router-dom';
+import {Link } from 'react-router-dom';
 import './Login.css';
 import logoAuth from "../../../images/Login.svg"
 
