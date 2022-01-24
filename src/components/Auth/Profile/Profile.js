@@ -1,13 +1,17 @@
-import React from 'react';
+import React,  { useState } from 'react';
 import './profile.css';
 import Header from "../../Header/Header"
 
 
 function Profile({loggedIn}) {
-
- 
-
-
+ const [profile, setProfile] = React.useState(false)
+ function profileReq () {
+  setProfile(true)
+ }
+ function userForm (evt) {
+  evt.preventDefault();
+  setProfile(false)
+ }
 
   return (
     <>
@@ -24,7 +28,7 @@ function Profile({loggedIn}) {
                 name="name"
                 placeholder="Ваше имя"
                 value="Алексей"
-                disabled
+               disabled={!profile}
               />
             </label>
 
@@ -36,14 +40,14 @@ function Profile({loggedIn}) {
                 name="name"
                 placeholder="Ваш email"
                 value="alekseu@ma.ru"
-                disabled
+                disabled={!profile}
               />
             </label>
 
-            <button className="profile__submit profile__coursor  profile__button_disaled " >Сохранить</button>
+            <button className={`profile__submit profile__coursor  ${!profile ? "profile__button_disaled" : ""} `} onClick={userForm}>Сохранить</button>
     </form>
-    <button className="profile__refactr profile__coursor  " >Редактировать</button>
-    <button className="profile__exit profile__coursor  ">Выйти из аккаунта</button>
+    <button className={`profile__refactr profile__coursor ${profile ? "profile__button_disaled" : ""} `} onClick={profileReq} >Редактировать</button>
+    <button className={`profile__exit profile__coursor  ${profile ? "profile__button_disaled" : ""}`} >Выйти из аккаунта</button>
 
     </section>
     </>
