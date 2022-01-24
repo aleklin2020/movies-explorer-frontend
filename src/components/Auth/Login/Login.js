@@ -19,7 +19,7 @@ function Login() {
    <label htmlFor="password" className="start__label">Пароль</label>
    	<input className="start__input" type="password" required name="password" placeholder="Введите пароль"/>
 
-   	<button className="start__input" className="start__button">Зарегистрироваться</button>
+   	<button className="start__button">Зарегистрироваться</button>
    </form>
     <p className="start__text">
         Уже зарегистрированы?

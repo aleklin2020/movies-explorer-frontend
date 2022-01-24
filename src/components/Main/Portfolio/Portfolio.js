@@ -1,5 +1,4 @@
 import React from 'react';
-import set from '../../../images/strelka.svg';
 import './portfolio.css';
 
 function Portfolio() {

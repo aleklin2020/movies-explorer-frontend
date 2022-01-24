@@ -1,5 +1,4 @@
 import React from 'react';
-import { Route, Link, NavLink } from 'react-router-dom';
 import Promo from "./Promo/Promo"
 import AboutProject from "./AboutProject/aboutProject"
 import Techs from "./Techs/Techs"

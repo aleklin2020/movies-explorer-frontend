@@ -1,10 +1,8 @@
 
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import  CurrentUserContext  from "../../contexts/CurrentUserContext";
 import './App.css';
 import { Route, Switch} from 'react-router-dom';
-import Header from '../Header/Header';
-import logo from '../../images/logo.svg';
 import Main from "../Main/main";
 import Footer from "../Footer/Footer"
 import Login from "../Auth/Login/Login"
@@ -17,15 +15,12 @@ import NoBud from "../NoBud/NoBud"
 
 function App() {
 
-	  const [currentUser, setCurrentUser] = useState({
-        name: "",
-        email: "",
-    });
+	
 
  const [loggedIn, setLoggedIn] = useState(false);
 
   return (
-  	 <CurrentUserContext.Provider value={currentUser}>
+  	 <CurrentUserContext.Provider>
    <div className="App">
    <Switch>
    	<Route exact path="/">
@@ -52,7 +47,7 @@ function App() {
     <Route path="/saved-movies">
     <SavedMovies loggedIn={setLoggedIn} />
     </Route>
-    
+
     <Route path="*">
     <NoBud />
     </Route>

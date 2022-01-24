@@ -17,7 +17,7 @@ function Register() {
    <label htmlFor="password" className="start__label">Пароль</label>
    	<input className="start__input" type="password" required name="password" placeholder="Введите пароль"/>
 
-   	<button className="start__input" className="start__button">Войти</button>
+   	<button className="start__button">Войти</button>
    </form>
     <p className="start__text">
         Еще не зарегистрированы?
